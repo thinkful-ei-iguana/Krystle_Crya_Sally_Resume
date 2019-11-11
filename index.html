@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
-    <title>Sally Student Resume</title>
+    <link rel="stylesheet" href="index.css">
+   <title>Sally Student Resume</title>
 </head>
 <body>
     <div id="application-root"></div>
-
     <script
     src="https://unpkg.com/react@16/umd/react.development.js">
   </script>
@@ -17,37 +16,43 @@
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
   </script>
   <script type="text/babel">
-    // Our code will go here
-      <nav role="navigation">
+
+   function App(props){ console.log(props); return(
+    <main>
+    <section>
+    <header>
     <ul>
-      <li><a href="/">Home</a></li>
+      <li><img src ="image.jpg" alt ="sallystudent"></li>
       <li><a href="/about_me">About me</a></li>
       <li><a href="/blog">Blog</a></li>
     </ul>
-  </nav>
-    <header>
-      <h1>Sally Student</h1>
-      <h2>StellarSallyStudent@Sally.com</h2>
-      <h2>Mobile: (612)777-4444</h2>
-    </header> 
-    <main>
-      <h2>Education</h2>
-        <ul>
-          <li>Thinkful-Software Coding-2019 to 2020</li>
-            <p> Lorem Ipson </p>
-          <li>Phoenix Univeristy-Bach of Business Management-2005 to 2008</li>
+    </header>
+    <section>
+<h1>Sally Student</h1>
+<h2>StellarSallyStudent@Sally.com </h2>
+<h2>Mobile: (612)777-4444</h2>
+<h2>Education</h2>
+<ul>
+<li>Thinkful-Software Coding-2019 to 2020</li>
+<p> Lorem Ipson </p>
+<li>Phoenix Univeristy-Bach of Business Management-2005 to 2008</li>
 
-      <h2> Experience</h2>
-        <ul> 
-           <li>Tik Tok</li>
-             <p> 2017 to current -Junior Developer- Helped developed the user interface
-             for the Tik Tok mobile app.  Worked with graphic designers on implementing
-             dynamic designs.</p>
-           <li>Apple Store</li>
-             <p> 2015 to 2017 -Retail Customer Assistant- Assisted customers with issues with mobile devices and 
-             laptops. Sold accesories for various Apple products.</p>     
+<h2> Experience</h2>
+<ul>
+<li>Tik Tok</li>
+<p> 2017 to current -Junior Developer- Helped developed the user interface
+for the Tik Tok mobile app. Worked with graphic designers on implementing
+dynamic designs.</p>
+<li>Apple Store</li>
+<p> 2015 to 2017 -Retail Customer Assistant- Assisted customers with issues with mobile devices and
+laptops. Sold accesories for various Apple products.</p>
+    </section>
     </main>
 
-    
+        ) } ReactDOM.render(
+        <App>
+            Sally Student
+        </App>, document.querySelector('#application-root') );
+    </script>
 </body>
 </html>
