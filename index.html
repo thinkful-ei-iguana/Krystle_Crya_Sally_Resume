@@ -17,42 +17,57 @@
   </script>
   <script type="text/babel">
 
-   function App(props){ console.log(props); return(
-    <main>
-    <section>
+
+function App(props) {
+  return (
+  <div class="ssresume">
     <header>
-    <ul>
-      <li><img src ="image.jpg" alt ="sallystudent"></li>
-      <li><a href="/about_me">About me</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
+      <ul>
+        <li><img src ="image.jpg" alt ="sallystudent"/></li>
+        <li><a href="/about_me">About me</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
     </header>
-    <section>
-<h1>Sally Student</h1>
-<h2>StellarSallyStudent@Sally.com </h2>
-<h2>Mobile: (612)777-4444</h2>
-<h2>Education</h2>
-<ul>
-<li>Thinkful-Software Coding-2019 to 2020</li>
-<p> Lorem Ipson </p>
-<li>Phoenix Univeristy-Bach of Business Management-2005 to 2008</li>
 
-<h2> Experience</h2>
-<ul>
-<li>Tik Tok</li>
-<p> 2017 to current -Junior Developer- Helped developed the user interface
-for the Tik Tok mobile app. Worked with graphic designers on implementing
-dynamic designs.</p>
-<li>Apple Store</li>
-<p> 2015 to 2017 -Retail Customer Assistant- Assisted customers with issues with mobile devices and
-laptops. Sold accesories for various Apple products.</p>
-    </section>
-    </main>
+      <main>
+        <section name='education-info'>
+          <h2>Education</h2>
+            <ul>
+              <li>Thinkful-Software Coding-2019 to 2020</li>
+                  <p> Lorem Ipson </p>
+              <li>Phoenix Univeristy-Bach of Business Management-2005 to 2008</li>
+            </ul>  
 
-        ) } ReactDOM.render(
+        </section>
+        <section name='job-experience'>
+          <h2> Experience</h2>
+            <ul>
+              <li>Tik Tok</li>
+                <p> 2017 to current -Junior Developer- Helped developed the user interface
+                for the Tik Tok mobile app. Worked with graphic designers on implementing
+                dynamic designs.</p>
+              <li>Apple Store</li>
+                <p> 2015 to 2017 -Retail Customer Assistant- Assisted customers with issues with mobile devices and
+                laptops. Sold accesories for various Apple products.</p>
+            </ul>    
+        </section>
+        <address>
+          <h1>Sally Student</h1>
+            <h2>StellarSallyStudent@Sally.com </h2>
+            <h2>Mobile: (612)777-4444</h2>
+        </address>
+    
+    
+      </main>
+      
+  </div>
+  );    
+}     ReactDOM.render(
         <App>
-            Sally Student
+            <h1>Sally Student</h1>
         </App>, document.querySelector('#application-root') );
-    </script>
-</body>
-</html>
+
+
+     </script>     
+  </body>      
+</html>        
